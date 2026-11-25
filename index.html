@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adli Hakimarzuq Sabekti — Creative Developer</title>
+  <meta name="description" content="Portfolio of Adli Hakimarzuq Sabekti (@hakimarzuq) — 3D Websites, 3D Modeling, and Game Development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Interactive Ambient Starfield & 3D Wireframe Canvas -->
+  <canvas id="cosmic-canvas" aria-hidden="true"></canvas>
+
+  <!-- Minimal Top Navigation -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#build">What I Build</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+
+      <a href="#" class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2.5L20.5 7.4V16.6L12 21.5L3.5 16.6V7.4L12 2.5Z" stroke="currentColor" stroke-width="1.6" />
+          <path d="M12 2.5V12M12 12L20.5 7.4M12 12L3.5 7.4M12 12V21.5" stroke="currentColor" stroke-width="1.2" opacity="0.7" />
+        </svg>
+        <span>hakimarzuq</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="#stack" class="nav-secondary">Stack</a>
+        <a href="https://github.com/hakimarzuq" target="_blank" rel="noopener noreferrer" class="nav-pill">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Crafting 3D worlds<br />for web &amp; games</h1>
+        <p class="hero-sub">Adli Hakimarzuq Sabekti &nbsp;·&nbsp; 3D Web, 3D Modeling &amp; Game Development</p>
+        <div class="hero-cta">
+          <a href="#build" class="btn-mint">Explore Focus</a>
+          <a href="https://github.com/hakimarzuq" target="_blank" rel="noopener noreferrer" class="btn-ghost">View GitHub →</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="./assets/hero-cosmic.jpg" alt="Cosmic ringed planet and glowing crystalline mountains" class="hero-art" />
+      </div>
+    </section>
+
+    <!-- Editorial Centered Intro -->
+    <section id="about" class="intro">
+      <div class="intro-inner">
+        <p class="intro-text">
+          Hi, I'm <strong>Adli Hakimarzuq Sabekti</strong> (<code>@hakimarzuq</code>) — a creative developer exploring
+          the intersection of interactive 3D websites, 3D asset modeling, and real-time game worlds. I enjoy turning
+          clean engineering, shaders, and spatial art into experiences you can explore right on screen.
+        </p>
+      </div>
+    </section>
+
+    <!-- What I Build (4-Column Minimal Icon Grid) -->
+    <section id="build" class="build">
+      <div class="container">
+        <h2 class="section-title">What I build</h2>
+
+        <div class="build-grid">
+          <article class="build-item">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6" />
+                <ellipse cx="12" cy="12" rx="4" ry="8.5" stroke="currentColor" stroke-width="1.3" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.3" />
+              </svg>
+            </div>
+            <h3>3D Websites</h3>
+            <p>Three.js &amp; WebGL</p>
+          </article>
+
+          <article class="build-item">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L20 7.5V16.5L12 21L4 16.5V7.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M12 12L20 7.5M12 12L4 7.5M12 12V21" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </div>
+            <h3>3D Modeling</h3>
+            <p>Blender &amp; PBR Assets</p>
+          </article>
+
+          <article class="build-item">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3.5" y="7" width="17" height="10" rx="5" stroke="currentColor" stroke-width="1.6" />
+                <path d="M8.5 10V14M6.5 12H10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <circle cx="15.5" cy="11" r="1" fill="currentColor" />
+                <circle cx="17.5" cy="13" r="1" fill="currentColor" />
+              </svg>
+            </div>
+            <h3>Game Dev</h3>
+            <p>Unity, Godot &amp; C#</p>
+          </article>
+
+          <article class="build-item">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="4" width="16" height="16" rx="3.5" stroke="currentColor" stroke-width="1.6" />
+                <path d="M8 9.5L11 12L8 14.5M12.5 14.5H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Interactive UI</h3>
+            <p>TypeScript &amp; React</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Pills -->
+    <section id="stack" class="stack">
+      <div class="container">
+        <div class="stack-row">
+          <span>Three.js</span>
+          <span>WebGL / GLSL</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Blender</span>
+          <span>Unity</span>
+          <span>Unreal Engine</span>
+          <span>Godot</span>
+          <span>C# / C++</span>
+          <span>Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Projects Roadmap -->
+    <section id="roadmap" class="roadmap">
+      <div class="container">
+        <div class="roadmap-head">
+          <h2 class="section-title">Building next</h2>
+          <a href="https://github.com/hakimarzuq?tab=repositories" target="_blank" rel="noopener noreferrer" class="roadmap-link">All repositories →</a>
+        </div>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <span class="badge">01 · In Progress</span>
+            <h3>Interactive 3D Web Showcase</h3>
+            <p>Real-time browser scenes with smooth camera choreography and custom GLSL shaders.</p>
+            <div class="tags"><span>Three.js</span><span>TypeScript</span><span>GLSL</span></div>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="badge">02 · In Progress</span>
+            <h3>3D Asset &amp; PBR Lab</h3>
+            <p>Stylized and hard-surface models, lighting studies, and optimized glTF assets.</p>
+            <div class="tags"><span>Blender</span><span>glTF</span><span>PBR</span></div>
+          </div>
+
+          <div class="roadmap-card">
+            <span class="badge">03 · Next Up</span>
+            <h3>Indie Game Prototype</h3>
+            <p>Hands-on gameplay mechanics, physics, and atmospheric world building.</p>
+            <div class="tags"><span>Unity</span><span>Godot</span><span>C#</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cosmic Floating City Footer -->
+  <footer class="footer">
+    <div class="footer-visual">
+      <img src="./assets/footer-city.jpg" alt="Floating futuristic cosmic city and planet" class="footer-art" />
+    </div>
+    <div class="footer-bar">
+      <div class="container footer-inner">
+        <span>© 2026 Adli Hakimarzuq Sabekti</span>
+        <div class="footer-links">
+          <a href="https://github.com/hakimarzuq" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#about">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
